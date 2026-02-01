@@ -5,26 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
 </head>
 <body>
 
-<div class="register-container ">
-  <div class="register-container-body">
-    <h5 class="container-title">Register</h5>
+<div class="register-container vh-100 d-flex justify-content-center align-items-center">
+  <div class="card px-3 py-5 shadow rounded-4 w-40">
+    <h5 class="container-title text-center">Register</h5>
     <form>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter full name" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter email" required>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter password" required>
-        <label for="confirmpass">Confirm Password</label>
-        <input type="password" id="confirmpass" name="confirmpass" placeholder="Confirm password" required>
-        <label for="age">Age</label>
-        <input type="number" id="age" name="age" placeholder="Enter age" required>
-        <label for="country">Country</label>
-        <select name="country" id="country">
+        <label class="d-block" for="name">Full Name</label>
+        <input class="form-control mb-3" type="text" id="name" name="name" placeholder="Enter full name" required>
+        
+        <label class="d-block" for="email">Email</label>
+        <input class="form-control mb-3" type="email" id="email" name="email" placeholder="Enter email" required>
+        
+        <label class="d-block" for="password">Password</label>
+        <input class="form-control mb-3" type="password" id="password" name="password" placeholder="Enter password" required>
+        
+        <label class="d-block" for="confirmpass">Confirm Password</label>
+        <input class="form-control mb-3" type="password" id="confirmpass" name="confirmpass" placeholder="Confirm password" required>
+        
+        <label class="d-block" for="age">Age</label>
+        <input class="form-control mb-3" type="number" id="age" name="age" placeholder="Enter age" min="1" max="120" required>
+        
+        <label class="d-block" for="country">Country</label>
+        <select name="country" id="country" class="form-control mb-3" required>
             <option value="">Select Country</option>
             <option value="USA">USA</option>
             <option value="Canada">Canada</option>
@@ -42,10 +47,10 @@
             <label for="other">Other</label>
             <br>
             <input type="checkbox" id="terms" name="terms" value="terms" required>
-            <label for="terms" style="display:inline">I agree to the Terms & Conditions</label>
+            <label class="mt-3" for="terms" style="display:inline">I agree to the Terms & Conditions</label>
 
-        <button type="submit" class="btn btn-success">Register</button>
-        <div class="center-links">
+        <button type="submit" class="btn btn-success w-100 justify-content-center mt-3">Register</button>
+        <div class="center-links d-flex justify-content-center align-items-center mt-3">
             <Label id="noacc">Already have an account?</Label>
             <a href="login.html" class="card-link">Login here</a>
         </div>
